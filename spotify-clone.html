@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="sidebar">
+
+            <h2>Spotify</h2>
+
+            <nav>
+                <a href="#" class="active">
+                    <span class="nav-icon">🏠</span>
+                    <span class="nav-text">Home</span>
+                </a>
+
+                <a href="#">
+                    <span class="nav-icon">🔍</span>
+                    <span class="nav-text">Search</span>
+                </a>
+
+            </nav>
+
+            <div class="library">
+                <h3>Your Library</h3>
+
+                <a href="#">
+                    <span class="nav-icon">➕</span>
+                    <span class="nav-text">Create Playlist</span>
+                </a>
+
+                <a href="#">
+                    <span class="nav-icon">❤️</span>
+                    <span class="nav-text">Liked Songs</span>
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="main-content">
+
+            <div class="top-header">
+
+                <div class="navigation-buttons">
+                    <button>←</button>
+                    <button>→</button>
+                </div>
+
+                <div class="search-bar">
+
+                    <span>🔍</span>
+
+                    <input type="text" placeholder="What do you want to play?">
+
+                </div>
+
+                <div class="profile">
+                    <span>Y</span>
+                    <p>Yuvraj</p>
+                </div>
+
+            </div>
+
+
+            <h1>Good evening</h1>
+
+            <h2 class="section-title">Recently Played</h2>
+
+            <div class="music-container">
+
+                <div class="music-card">
+                    <div class="image-container">
+
+                        <img src="images/daily mix images 1.jpg" alt="Daily Mix">
+
+                        <button class="play-button">▶</button>
+
+                    </div>
+                    <h3>Daily Mix 1</h3>
+                    <p>Made for you</p>
+                    
+                </div>
+
+                <div class="music-card">
+                    <div class="image-container">
+                        <img src="images/chill hit.jpg" alt="Chill Hits">
+                        <button class="play-button">▶</button>
+                    </div>
+                    
+                    <h3>Chill Hits</h3>
+                    <p>Relax and enjoy</p>
+                    
+                </div>
+
+                <div class="music-card">
+
+                    <div class="image-container">
+                        <img src="images/workout music.jpg" alt="Workout Music">
+                        <button class="play-button">▶</button>
+                    </div>
+                    
+                    <h3>Workout Music</h3>
+                    <p>Power your workout</p>
+                    
+                </div>
+
+                <div class="music-card">
+                    <div class="image-container">
+                        <img src="images/today top hit.jpg" alt="Workout Music">
+                        <button class="play-button">▶</button>
+                    </div>
+                    
+                    <h3>Workout Music</h3>
+                    <p>Power your workout</p>
+                    
+                </div>
+
+
+            </div>
+
+            <h2 class="section-title">Made For You</h2>
+
+            <div class="music-container">
+
+                <div class="music-card">
+                    <div class="image-container">
+                        <img src="images/chill vibe.jpg" alt="Chill Vibes">
+                        <button class="play-button">▶</button>
+                    </div>
+                    
+                    <h3>Chill Vibes</h3>
+                    <p>Relax and enjoy your day</p>
+                    
+                </div>
+
+                <div class="music-card">
+                    <div class="image-container">
+                        <img src="images/focus flow.jpg" alt="Focus Flow">
+                        <button class="play-button">▶</button>
+                    </div>
+                    
+                    <h3>Focus Flow</h3>
+                    <p>Music for concentration</p>
+                    
+                </div>
+
+                <div class="music-card">
+
+                    <div class="image-container">
+
+                        <img src="images/indian hits.jpg" alt="Indian Hits">
+
+                        <button class="play-button">▶</button>
+
+                    </div>
+
+                    <h3>Indian Hits</h3>
+                    <p>Popular Indian music</p>
+                
+                </div>
+
+                <div class="music-card">
+                    <div class="image-container">
+                        <img src="images/morning vibe.jpg" alt="Morning Vibes">
+                        <button class="play-button">▶</button>
+                    </div>
+                    
+                    <h3>Morning Vibes</h3>
+                    <p>Start your day with music</p>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="music-player">
+
+        <div class="song-info">
+            <h4>Daily Mix 1</h4>
+            <p>Made for you</p>
+        </div>
+
+        <div class="player-controls">
+
+            <button>⏮</button>
+            <button class="main-play">▶</button>
+            <button>⏭</button>
+
+        </div>
+
+        <div class="progress-container">
+
+            <span>0:00</span>
+
+            <input type="range" min="0" max="100" value="0">
+
+            <span>3:45</span>
+
+        </div>
+
+        <div class="volume-container">
+
+            <span>🔊</span>
+
+            <input type="range" min="0" max="100" value="70">
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+
+        <p>© 2026 Spotify Clone  @by Yuvraj Singh</p>
+
+        <div class="footer-links">
+            <a href="#">About</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+        </div>
+
+    </footer>
+
+</body>
+</html>

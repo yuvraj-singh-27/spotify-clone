@@ -1,0 +1,839 @@
+
+/* =========================================================
+   1. GLOBAL RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   2. BODY
+   ========================================================= */
+
+body {
+    background-color: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================================================
+   3. MAIN CONTAINER
+   ========================================================= */
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   4. SIDEBAR
+   ========================================================= */
+
+.sidebar {
+    width: 240px;
+    height: 100vh;
+
+    background-color: #121212;
+
+    padding: 25px 20px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+    color: #1db954;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar a {
+    display: block;
+
+    padding: 8px 10px;
+
+    color: #b3b3b3;
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        padding-left 0.2s ease;
+}
+
+.sidebar a:hover {
+    background-color: #282828;
+    color: white;
+    padding-left: 15px;
+}
+
+.sidebar a.active {
+    color: white;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   5. LIBRARY
+   ========================================================= */
+
+.library {
+    margin-top: 40px;
+}
+
+.library h3 {
+    margin-bottom: 20px;
+}
+
+.library a {
+    display: block;
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   6. MAIN CONTENT
+   ========================================================= */
+
+.main-content {
+    flex: 1;
+
+    height: 100vh;
+
+    padding: 30px;
+    padding-bottom: 120px;
+
+    overflow-y: auto;
+
+    background: linear-gradient(
+        to bottom,
+        #1a1a1a,
+        #121212
+    );
+}
+
+.main-content h1 {
+    font-size: 28px;
+}
+
+
+/* =========================================================
+   7. TOP HEADER
+   ========================================================= */
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   8. NAVIGATION BUTTONS
+   ========================================================= */
+
+.navigation-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.navigation-buttons button {
+    width: 35px;
+    height: 35px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #242424;
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.navigation-buttons button:hover {
+    transform: scale(1.1);
+}
+
+
+/* =========================================================
+   9. SEARCH BAR
+   ========================================================= */
+
+.search-bar {
+    width: 350px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 15px;
+    margin-bottom: 30px;
+
+    background-color: #242424;
+
+    border-radius: 25px;
+
+    transition: 0.2s;
+}
+
+.search-bar:hover,
+.search-bar:focus-within {
+    background-color: #2a2a2a;
+}
+
+.search-bar span {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.search-bar input {
+    width: 100%;
+
+    background: transparent;
+
+    border: none;
+    outline: none;
+
+    color: white;
+    font-size: 14px;
+}
+
+.search-bar input:focus {
+    color: white;
+    caret-color: #1db954;
+}
+
+.search-bar input::placeholder {
+    color: #b3b3b3;
+}
+
+.search-bar input::selection {
+    background-color: #1db954;
+    color: black;
+}
+
+
+/* =========================================================
+   10. PROFILE
+   ========================================================= */
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 5px 10px 5px 5px;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.profile span {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #333;
+
+    border-radius: 50%;
+
+    font-weight: bold;
+
+    transition: 0.2s ease;
+}
+
+.profile p {
+    font-size: 14px;
+}
+
+.profile:hover {
+    background-color: #282828;
+}
+
+.profile:hover span {
+    transform: scale(1.05);
+
+    background-color: #1db954;
+    color: black;
+}
+
+
+/* =========================================================
+   11. SECTION TITLES
+   ========================================================= */
+
+.section-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    font-size: 24px;
+}
+
+
+/* =========================================================
+   12. MUSIC CONTAINER
+   ========================================================= */
+
+.music-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   13. MUSIC CARD
+   ========================================================= */
+
+.music-card {
+    width: 180px;
+
+    padding: 15px;
+
+    background-color: #181818;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.music-card:hover {
+    background-color: #282828;
+    transform: translateY(-5px);
+}
+
+.music-card:active {
+    transform: scale(0.98);
+}
+
+
+/* ---------- Music Card Text ---------- */
+
+.music-card h3 {
+    margin-bottom: 8px;
+
+    font-size: 16px;
+}
+
+.music-card p {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+
+/* ---------- Music Card Image ---------- */
+
+.music-card img {
+    width: 100%;
+    height: 150px;
+
+    display: block;
+
+    object-fit: cover;
+
+    margin-bottom: 15px;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+
+/* ---------- Music Card Image Container ---------- */
+
+.image-container {
+    position: relative;
+
+    overflow: hidden;
+
+    margin-bottom: 15px;
+
+    border-radius: 6px;
+}
+
+.image-container img {
+    width: 100%;
+
+    display: block;
+
+    margin-bottom: 0;
+
+    transition: 0.3s;
+}
+
+.image-container:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.75);
+}
+
+
+/* ---------- Music Card Play Button ---------- */
+
+.play-button {
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #1db954;
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    opacity: 0;
+
+    transform: translateY(10px);
+
+    transition: 0.3s;
+}
+
+.image-container:hover .play-button {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.play-button:hover {
+    color: #000;
+    transform: scale(1.15);
+}
+
+.music-card button:hover {
+    transform: scale(1.15);
+}
+
+
+/* =========================================================
+   14. MUSIC PLAYER
+   ========================================================= */
+
+.music-player {
+    position: fixed;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 10px 20px;
+
+    background-color: #181818;
+
+    z-index: 1000;
+}
+
+
+/* =========================================================
+   15. SONG INFORMATION
+   ========================================================= */
+
+.song-info {
+    width: 220px;
+}
+
+.song-info h4 {
+    margin-bottom: 5px;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.song-info h4:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.song-info p {
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   16. PLAYER CONTROLS
+   ========================================================= */
+
+.player-controls {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-left: 30px;
+}
+
+.player-controls button {
+    border: none;
+
+    background: transparent;
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.player-controls button:hover {
+    transform: scale(1.15);
+}
+
+
+/* =========================================================
+   17. MAIN PLAY BUTTON
+   ========================================================= */
+
+.main-play {
+    width: 40px;
+    height: 40px;
+
+    background-color: white !important;
+    color: black !important;
+
+    border-radius: 50%;
+}
+
+.main-play:hover {
+    transform: scale(1.1);
+}
+
+
+/* =========================================================
+   18. PROGRESS BAR
+   ========================================================= */
+
+.progress-container {
+    display: flex;
+    align-items: center;
+
+    flex: 1;
+
+    gap: 10px;
+
+    margin-left: 30px;
+}
+
+.progress-container span {
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+.progress-container input {
+    flex: 1;
+}
+
+.progress-container input[type="range"] {
+    height: 4px;
+
+    appearance: none;
+
+    background: #535353;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.progress-container input[type="range"]::-webkit-slider-thumb {
+    width: 12px;
+    height: 12px;
+
+    appearance: none;
+
+    background: white;
+
+    border-radius: 50%;
+
+    opacity: 0.4;
+}
+
+.progress-container input[type="range"]:hover::-webkit-slider-thumb {
+    opacity: 1;
+}
+
+
+/* =========================================================
+   19. VOLUME CONTROL
+   ========================================================= */
+
+.volume-container {
+    width: 150px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.volume-container span {
+    font-size: 16px;
+}
+
+.volume-container input {
+    width: 100px;
+
+    cursor: pointer;
+
+    accent-color: #1db954;
+}
+
+
+/* =========================================================
+   20. FOOTER
+   ========================================================= */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 60px;
+    padding: 30px 0 100px;
+
+    border-top: 1px solid #282828;
+}
+
+.footer p {
+    color: #b3b3b3;
+    font-size: 13px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #b3b3b3;
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   21. TABLET - 769px TO 1024px
+   ========================================================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .music-container {
+        gap: 15px;
+    }
+
+    .music-card {
+        width: calc(25% - 12px);
+    }
+
+    .music-card img {
+        height: 140px;
+    }
+}
+
+
+/* =========================================================
+   22. RESPONSIVE - 768px
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* ---------- Sidebar ---------- */
+
+    .sidebar {
+        width: 180px;
+    }
+
+
+    /* ---------- Main Content ---------- */
+
+    .main-content {
+        padding: 20px;
+    }
+
+
+    /* ---------- Music Cards ---------- */
+
+    .music-card {
+        width: 160px;
+    }
+
+
+    /* ---------- Search Bar ---------- */
+
+    .search-bar {
+        width: 250px;
+    }
+
+
+    /* ---------- Music Player ---------- */
+
+    .music-player {
+        height: 70px;
+
+        padding: 8px 12px;
+
+        gap: 10px;
+    }
+
+    .song-info {
+        width: 160px;
+    }
+
+    .player-controls {
+        margin-left: 0;
+        gap: 10px;
+    }
+
+    .progress-container {
+        margin-left: 0;
+        gap: 6px;
+    }
+
+    .volume-container {
+        width: 110px;
+    }
+
+    .volume-container input {
+        width: 70px;
+    }
+}
+
+
+/* =========================================================
+   23. MOBILE - 480px
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    /* ---------- Sidebar ---------- */
+
+    .sidebar {
+        width: 70px;
+
+        padding: 20px 10px;
+    }
+
+    .sidebar h2 {
+        font-size: 0;
+        text-align: center;
+    }
+
+    .sidebar h2::after {
+        content: "♪";
+
+        font-size: 24px;
+    }
+
+    .sidebar nav {
+        gap: 10px;
+    }
+
+    .sidebar nav a,
+    .library a {
+        font-size: 0;
+        text-align: center;
+    }
+
+    .sidebar a {
+        padding: 10px 5px;
+    }
+
+    .sidebar nav .nav-icon,
+    .library .nav-icon {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-text {
+        display: none;
+    }
+
+    .nav-icon {
+        font-size: 20px;
+    }
+
+    .library {
+        margin-top: 25px;
+    }
+
+    .library h3 {
+        font-size: 0;
+        text-align: center;
+    }
+
+    .library h3::after {
+        content: "Library";
+
+        font-size: 10px;
+    }
+
+    .library a {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+
+    /* ---------- Main Content ---------- */
+
+    .main-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .main-content h1 {
+        font-size: 22px;
+    }
+
+    .section-title {
+        margin-top: 25px;
+        margin-bottom: 15px;
+
+        font-size: 20px;
+    }
+}
