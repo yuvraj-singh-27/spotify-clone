@@ -129,7 +129,7 @@ I'm Yuvraj Singh, a BCA student currently learning and building projects in fron
 
 I'm using projects like this to improve my practical skills and build my portfolio.
 
-GitHub: [YOUR_GITHUB_LINK](https://github.com/yuvraj-singh-27/spotify-clone)
+GitHub: https://github.com/yuvraj-singh-27/spotify-clone
 
 LinkedIn: https://www.linkedin.com/in/yuvraj-singh-538823346
 
